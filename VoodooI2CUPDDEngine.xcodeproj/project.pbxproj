@@ -6,13 +6,8 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		4E0A28F41FAD1AD200D377B0 /* VoodooI2CUPDDEngine.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A28F31FAD1AD200D377B0 /* VoodooI2CUPDDEngine.c */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		4E0A28F01FAD1AD200D377B0 /* VoodooI2CUPDDEngine.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoodooI2CUPDDEngine.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E0A28F31FAD1AD200D377B0 /* VoodooI2CUPDDEngine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VoodooI2CUPDDEngine.c; sourceTree = "<group>"; };
 		4E0A28F51FAD1AD200D377B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +41,6 @@
 		4E0A28F21FAD1AD200D377B0 /* VoodooI2CUPDDEngine */ = {
 			isa = PBXGroup;
 			children = (
-				4E0A28F31FAD1AD200D377B0 /* VoodooI2CUPDDEngine.c */,
 				4E0A28F51FAD1AD200D377B0 /* Info.plist */,
 			);
 			path = VoodooI2CUPDDEngine;
@@ -130,7 +124,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0A28F41FAD1AD200D377B0 /* VoodooI2CUPDDEngine.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +223,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = VoodooI2CUPDDEngine/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULE_NAME = com.blankmac.VoodooI2CUPDDEngine;
 				MODULE_START = VoodooI2CUPDDEngine_start;
 				MODULE_STOP = VoodooI2CUPDDEngine_stop;
@@ -244,6 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = VoodooI2CUPDDEngine/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULE_NAME = com.blankmac.VoodooI2CUPDDEngine;
 				MODULE_START = VoodooI2CUPDDEngine_start;
 				MODULE_STOP = VoodooI2CUPDDEngine_stop;
@@ -273,6 +268,7 @@
 				4E0A28FA1FAD1AD200D377B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -20,6 +18,20 @@
 	<string>1</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 blankmac. All rights reserved.</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>UPDD Multitouch Engine</key>
+		<dict>
+			<key>IOClass</key>
+			<string>VoodooI2CUPDDEngine</string>
+			<key>CFBundleIdentifier</key>
+			<string>com.alexandred.VoodooI2C</string>
+			<key>IOMatchCategory</key>
+			<string>VoodooI2CUPDDEngine</string>
+			<key>IOProviderClass</key>
+			<string>VoodooI2CMultitouchInterface</string>
+		</dict>
+	</dict>
 	<key>OSBundleLibraries</key>
 	<dict/>
 </dict>
